@@ -29,7 +29,7 @@ export default class App extends Component {
   }
 
   addGif(){
-    fetch('https://api.giphy.com/v1/gifs/random?api_key=fYAY5UhrPTtE6c1OYJsgzzYNFQwyPRae&tag=Lionel+Messi&rating=g')
+    fetch('https://api.giphy.com/v1/gifs/random?api_key=fYAY5UhrPTtE6c1OYJsgzzYNFQwyPRae&rating=g')
     .then(response=> response.json())
     .then(info => this.setState({
       gifs: [
